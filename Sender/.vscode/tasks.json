@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sender",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "sender.c",
+                "-I", "C:/openssl/include/openssl",
+                "-L", "C:/openssl/lib",
+                "-lssl",
+                "-lcrypto",
+                "-lws2_32",
+                "-o",
+                "sender.exe"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
